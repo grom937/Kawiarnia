@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mokka — przytulna kawiarnia w centrum miasta. Kawa, domowe wypieki i spokojna atmosfera.">
+  <title>Mokka — Kawa, ciasta i spokojny poranek</title>
+  <link rel="icon" href="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=800&h=600" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#start" aria-label="Mokka — przejdź do początku strony">Mokka</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otwórz menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Główna nawigacja">
+        <a href="#start">Start</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#menu">Menu</a>
+        <a href="#bestsellery">Bestsellery</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <a class="button button-primary header-cta" href="#menu">Zobacz menu</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="start">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mała kawiarnia w centrum miasta</p>
+          <h1>Kawa, ciasta i spokojny poranek</h1>
+          <p class="lead">Wpadnij na świeżo paloną kawę, domowe wypieki i chwilę odpoczynku w przytulnym wnętrzu.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Zobacz menu</a>
+            <a class="button button-secondary" href="#kontakt">Odwiedź nas</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual card-frame">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1447&h=1600" alt="Przytulne wnętrze małej kawiarni z filiżanką kawy i wypiekami" width="640" height="520">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="o-nas">
+      <div class="container two-column-section">
+        <div class="section-copy">
+          <p class="eyebrow">O nas</p>
+          <h2>Miejsce stworzone na codzienne rytuały</h2>
+          <p>Serwujemy aromatyczną kawę, sezonowe napoje i wypieki przygotowywane na miejscu. Tworzymy przestrzeń, do której chce się wracać.</p>
+        </div>
+
+        <div class="feature-grid" aria-label="Najważniejsze atuty kawiarni">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">☕</div>
+            <h3>Świeżo palona kawa</h3>
+            <p>Krótki opis komponentu kafelka.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🥐</div>
+            <h3>Domowe wypieki</h3>
+            <p>Krótki opis komponentu kafelka.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🍋</div>
+            <h3>Sezonowe napoje</h3>
+            <p>Krótki opis komponentu kafelka.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bestsellery">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="eyebrow">Najczęściej wybierane</p>
+          <h2>Nasze bestsellery</h2>
+        </div>
+
+        <div class="product-grid" id="bestsellers-list" aria-live="polite">
+          <p class="state-message">Ładowanie bestsellerów z bazy danych...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="menu">
+      <div class="container menu-section">
+        <div class="section-heading">
+          <p class="eyebrow">Oferta</p>
+          <h2>Menu</h2>
+        </div>
+
+        <div class="menu-columns" id="menu-list" aria-live="polite">
+          <p class="state-message">Ładowanie menu z bazy danych...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Odwiedź nas</h2>
+          <address>
+            <p>ul. Kwiatowa 12, Kraków</p>
+            <p>Pn–Pt: 8:00–20:00</p>
+            <p>Sb–Nd: 9:00–21:00</p>
+            <p><a href="mailto:kontakt@mokka.pl">kontakt@mokka.pl</a></p>
+            <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+          </address>
+        </div>
+
+        <form class="contact-form card-frame" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Imię</label>
+            <input id="name" name="name" type="text" placeholder="Twoje imię" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="twoj@email.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" placeholder="Napisz do nas..." required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Wyślij</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="logo">Mokka</p>
+      <p>Kawa, wypieki i spokojna atmosfera w centrum miasta.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
